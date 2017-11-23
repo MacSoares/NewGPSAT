@@ -1,0 +1,41 @@
+{% extends 'web/gpsatHome.html' %}
+{% block content %}
+<div class="mdl-layout__tab-panel is-active" id="home">
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+      <div class="mdl-card__supporting-text">
+        <table id="table" class="table table-hover table-mc-light-blue">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome do Paciente</th>
+          <th>Tipo de amputação</th>
+          <th>Dados da Avaliação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-title="ID">1</td>
+          <td data-title="Name">Macário Soares</td>
+          <td data-title="Link">Transfemoral</td>
+          <td data-title="Status"><a href="{% url 'patient' id=1 %}" class="mdl-layout__tab"> <button class="mdl-button mdl-js-button  mdl-color--accent"> Mostar dados </button></a></td>
+        </tr>
+        <tr>
+          <td data-title="ID">2</td>
+          <td data-title="Name">Bruna Silva</td>
+          <td data-title="Link">Transfemoral</td>
+          <td data-title="Status"><a href="{% url 'patient' id=1 %}" class="mdl-layout__tab"> <button class="mdl-button mdl-js-button  mdl-color--accent"> Mostar dados </button></a></td>
+        </tr>
+        <tr>
+          <td data-title="ID">3</td>
+          <td data-title="Name">Roberto Lima</td>
+          <td data-title="Link">Transtibial</td>
+          <td data-title="Status"><a href="{% url 'patient' id=1 %}" class="mdl-layout__tab"> <button class="mdl-button mdl-js-button  mdl-color--accent"> Mostar dados </button></a></td>
+        </tr>
+      </tbody>
+    </table>
+      </div>
+
+  </section>
+</div>
+{% endblock %}

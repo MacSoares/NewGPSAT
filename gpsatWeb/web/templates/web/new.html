@@ -1,0 +1,16 @@
+{% extends 'web/gpsatHome.html' %}
+{% block content %}
+<div class="mdl-layout__tab-panel" id="new">
+    <h4>Cadastrar Nova Avaliação</h4>
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+
+
+    <br>
+    <form method="POST" class="post-form form-center">{% csrf_token %}
+        <center>{{ form.as_p }}</center>
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+  </section>
+</div>
+{% endblock %}
